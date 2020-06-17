@@ -55,5 +55,5 @@ with open('contacts.txt','a+') as c:
     print(c.read())
 
 
-email_pattern = r'\w+@\w+.\w{3}'
+email_pattern = r'[\w]+@[\w]+.\w{3}'
 print(re.findall(email_pattern, page_two_text))
